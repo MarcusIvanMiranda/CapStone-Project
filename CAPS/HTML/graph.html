@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDA VET - Cat Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/graph.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">SUDA VET</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-tachometer-alt nav-icon"></i> Dashboard
+                </a>
+                <a href="alert.html" class="nav-item">
+                    <i class="fas fa-bell nav-icon"></i> Alerts
+                </a>
+                <a href="record.html" class="nav-item">
+                    <i class="fas fa-file-medical nav-icon"></i> Records
+                </a>
+                <a href="diagnostic.html" class="nav-item">
+                    <i class="fas fa-heartbeat nav-icon"></i> Diagnostics
+                </a>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1 id="catNameTitle" class="page-title"></h1>
+            </header>
+
+            <div class="content-body">
+                <div class="cat-details-grid">
+                    <div class="cat-details-card">
+                        <div class="cat-profile-image">
+                            <img id="catProfileImage" src="" alt="Cat Image">
+                        </div>
+                        <div class="cat-info">
+                            <div class="info-group">
+                                <h2 id="catProfileName"></h2>
+                            </div>
+                            <div class="info-group">
+                                <strong>Owner:</strong> <span id="catOwnerName"></span>
+                            </div>
+                            <div class="info-group">
+                                <strong>Breed:</strong> <span id="catBreed"></span>
+                            </div>
+                            <div class="info-group">
+                                <strong>Birth Date:</strong> <span id="catBirthDate"></span>
+                            </div>
+                            <div class="info-group">
+                                <strong>Registered Since:</strong> <span id="catRegisteredDate"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="graph-container">
+                        <h2>Health Graph</h2>
+                        <div class="graph-placeholder">
+                            <p>Graph placeholder here (e.g., using Chart.js or another library)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="possible-diseases-container">
+                    <h2>Possible Heart Diseases</h2>
+                    <div class="diseases-placeholder">
+                        <p>Placeholder for possible diseases based on diagnostic data.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/graph.js"></script>
+</body>
+</html>

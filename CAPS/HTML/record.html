@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDA VET - Records</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/record.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">SUDA VET</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <i class="fas fa-tachometer-alt nav-icon"></i> Dashboard
+                </a>
+                <a href="alert.html" class="nav-item">
+                    <i class="fas fa-bell nav-icon"></i> Alerts
+                </a>
+                <a href="record.html" class="nav-item active">
+                    <i class="fas fa-file-medical nav-icon"></i> Records
+                </a>
+                <a href="diagnostic.html" class="nav-item">
+                    <i class="fas fa-heartbeat nav-icon"></i> Diagnostics
+                </a>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <header>
+                <h1 class="page-title">Records</h1>
+            </header>
+            
+            <div class="content-body">
+                <div class="section-container">
+                    <h2 class="section-title">Registered Cats</h2>
+                    <div id="catsContainer" class="cats-list">
+                        <p id="noCatsMessage" class="empty-message">No cats registered yet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/record.js"></script>
+</body>
+</html>
